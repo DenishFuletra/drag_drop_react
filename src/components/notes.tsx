@@ -175,7 +175,7 @@ const Notes: React.FC<NotesProps> = ({ notes, setNotes }) => {
             </div>
             <div>
                 {notes.length > 0 &&
-                    notes.map((elem, index) => (
+                    notes.map((elem) => (
                         <Note
                             key={elem.id}
                             ref={(el) => (noteRefs.current[elem.id] = el)}
